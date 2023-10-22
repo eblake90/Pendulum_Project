@@ -1,0 +1,26 @@
+a. Relations between the Cartesian coordinates, x and y, and the generalized coordinate, theta(t). 
+x = r*sin(theta(t)) 
+y = -r*cos(theta(t)) 
+ 
+b. Velocities on x,y axis in terms of theta(t) 
+v_x = r*cos(theta(t))*Derivative(theta(t), t) 
+v_y = r*sin(theta(t))*Derivative(theta(t), t) 
+ 
+Rectilinear kinetic energy 
+T_rec = m*r**2*Derivative(theta(t), t)**2/2 
+ 
+Rotational kinetic energy 
+T_rot = i*Derivative(theta(t), t)**2/2 
+ 
+Total kinetic energy 
+T = (i + m*r**2)*Derivative(theta(t), t)**2/2 
+ 
+c. Potential energy 
+U = g*m*r*(1 - cos(theta(t))) 
+ 
+Lagrangian 
+L = T - U = g*m*r*cos(theta(t)) - g*m*r + i*Derivative(theta(t), t)**2/2 + m*r**2*Derivative(theta(t), t)**2/2 
+ 
+d. equations of the system. Q represents the torque 
+Q = g*m*r*sin(theta(t)) + i*Derivative(theta(t), (t, 2)) + m*r**2*Derivative(theta(t), (t, 2)) 
+ 
